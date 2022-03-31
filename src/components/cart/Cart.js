@@ -18,6 +18,7 @@ const Cart = ({ cart }) => {
         <div className='cart'>
             <h1>Order Summary</h1>
             {/* <p>Selected Items: {cart.length}</p> */}
+            <p>Total Items: {cart.length}</p>
             <p>Total Quantity: {quantity}</p>
             <p>Total Price: ${total}</p>
             <p>Total Shipping Charge: ${shipping}</p>
