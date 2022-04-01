@@ -8,10 +8,10 @@ const Header = () => {
         <nav className='header'>
             <img src={logo} alt="" />
             <div>
-                <NavLink activeClassName="active" to="/shop">Shop</NavLink>
-                <NavLink activeClassName="active" to="/orders">Orders</NavLink>
-                <NavLink activeClassName="active" to="/inventory">Inventory</NavLink>
-                <NavLink activeClassName="active" to="/about">About</NavLink>
+                <NavLink activeclassname="active" to="/shop">Shop</NavLink>
+                <NavLink activeclassname="active" to="/orders">Orders</NavLink>
+                <NavLink activeclassname="active" to="/inventory">Inventory</NavLink>
+                <NavLink activeclassname="active" to="/about">About</NavLink>
             </div>
         </nav>
     );
