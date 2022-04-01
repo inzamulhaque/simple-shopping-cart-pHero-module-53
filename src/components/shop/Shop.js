@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import useCart from '../../hooks/useCart';
 import useProducts from '../../hooks/useProducts';
-import { addToDb, getStoredCart } from '../../utilities/fakedb';
+import { addToDb } from '../../utilities/fakedb';
 import Cart from '../cart/Cart';
 import Product from '../product/Product';
+import { Link } from 'react-router-dom';
 import './shop.css';
 
 const Shop = () => {
@@ -31,7 +32,11 @@ const Shop = () => {
                 }
             </div>
             <div className="cartContainer">
-                <Cart cart={cart} />
+                <Cart cart={cart}>
+                    <Link to={'/orders'}>
+                        <button>Review Orders</button>
+                    </Link>
+                </Cart>
             </div>
         </div>
     );
